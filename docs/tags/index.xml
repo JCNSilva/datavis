@@ -7,9 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
     <copyright>Proibida reprodução total ou parcial sem autorização</copyright>
+    <lastBuildDate>Tue, 14 Nov 2017 23:09:08 -0300</lastBuildDate>
     
 	<atom:link href="http://jcnsilva.github.io/datavis/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Artigo</title>
+      <link>http://jcnsilva.github.io/datavis/tags/artigo/</link>
+      <pubDate>Tue, 14 Nov 2017 23:09:08 -0300</pubDate>
+      
+      <guid>http://jcnsilva.github.io/datavis/tags/artigo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vega Lite</title>
+      <link>http://jcnsilva.github.io/datavis/tags/vega-lite/</link>
+      <pubDate>Tue, 14 Nov 2017 23:09:08 -0300</pubDate>
+      
+      <guid>http://jcnsilva.github.io/datavis/tags/vega-lite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Água</title>
+      <link>http://jcnsilva.github.io/datavis/tags/%C3%A1gua/</link>
+      <pubDate>Tue, 14 Nov 2017 23:09:08 -0300</pubDate>
+      
+      <guid>http://jcnsilva.github.io/datavis/tags/%C3%A1gua/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
