@@ -1,3 +1,56 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "http://jcnsilva.github.io/datavis/"
+copyright = "Proibida reprodução total ou parcial sem autorização"
+#disqusshortname = "vjeantet"
+languagecode = "pt-BR"
+paginate = 5
+pluralizelisttitles = false
+theme = "hugo-theme-casper"
+title = "Visualização de Dados"
+publishDir = "docs"
+
+[params]
+author = "Júlio César Neves"
+authorlocation = "Campina Grande, Brasil"
+authorwebsite = "http://jcnsilva.github.io"
+authorbio = "Estudante de Ciência da Computação"
+cover = "images/cover.png"
+description = "Portfólio de Visualizações de Dados"
+githubName = "jcnsilva"
+#googleAnalyticsUserID = "UA-79101-12"
+hideHUGOSupport = false
+logo = "images/logo.png"
+#twitterName = "vjeantet"
+
+[permalinks]
+post = "/:slug/"
+
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/"
+weight = -120
+
+[[menu.main]]
+name = "Github"
+pre = "<h3>Siga-me</h3>"
+url = "https://github.com/JCNSilva/"
+weight = 100
+
+#[[menu.main]]
+#name = "Twitter timeline"
+#url = "https://twitter.com/vjeantet"
+#weight = 101
+#[[menu.main]]
+#name = "Flipboard magazines"
+#url = "https://flipboard.com/@vjeantet"
+#weight = 102
+#[[menu.main]]
+#name = "Keybase (secure msg)"
+#pre = "<h3>Contact me</h3>"
+#url = "https://Keybase.io/vjeantet"
+#weight = 109
