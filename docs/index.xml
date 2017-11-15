@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualização de Dados</title>
+    <link>http://jcnsilva.github.io/datavis/</link>
+    <description>Recent content on Visualização de Dados</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <copyright>Proibida reprodução total ou parcial sem autorização</copyright>
+    
+	<atom:link href="http://jcnsilva.github.io/datavis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

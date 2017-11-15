@@ -4,7 +4,7 @@ copyright = "Proibida reprodução total ou parcial sem autorização"
 languagecode = "pt-BR"
 paginate = 5
 pluralizelisttitles = false
-theme = "hugo-theme-casper"
+theme = "casper"
 title = "Visualização de Dados"
 publishDir = "docs"
 
