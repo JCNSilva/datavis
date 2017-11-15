@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="A Crise Hídrica e o Açude Epitácio Pessoa"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="A Crise Hídrica e o Açude Epitácio Pessoa &middot; Visualização de Dados" />
+  	<meta property="og:site_name" content="Visualização de Dados" />
+  	<meta property="og:url" content="http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/" />
+
+    
+        
+            <meta property="og:image" content="/datavis/images/cover.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-11-14T23:09:08-03:00" />
+
+    
+    <meta property="article:tag" content="artigo" />
+    
+    <meta property="article:tag" content="água" />
+    
+    <meta property="article:tag" content="vega-lite" />
+    
+    <meta property="article:tag" content="lab-01" />
+    
+    
+
+    <title>A Crise Hídrica e o Açude Epitácio Pessoa &middot; Visualização de Dados</title>
+
+    
+    <meta name="description" content="Ainda que apresente consequências sociais mais brandas, a crise hídrica que se estende sobre o nordeste brasileiro já atingiu proporções que não eram vistas des" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/datavis/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/datavis/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/datavis/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/datavis/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="/datavis/index.xml" rel="alternate" type="application/rss+xml" title="Visualização de Dados" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    <link rel="canonical" href="http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://jcnsilva.github.io/datavis/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://jcnsilva.github.io/datavis/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://jcnsilva.github.io,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": Estudante de Ciência da Computação
+        
+    },
+    "headline": A Crise Hídrica e o Açude Epitácio Pessoa,
+    "name": A Crise Hídrica e o Açude Epitácio Pessoa,
+    "wordCount": 621,
+    "timeRequired": "PT3M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/,
+    "datePublished": 2017-11-14T23:09Z,
+    "dateModified": 2017-11-14T23:09Z,
+    
+    "keywords": artigo, água, vega-lite, lab-01,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            <h3>Siga-me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/JCNSilva/">Github</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/datavis/">Blog</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/datavis/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://jcnsilva.github.io/datavis/"><img src="/datavis/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">A Crise Hídrica e o Açude Epitácio Pessoa</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-11-14T23:09:08-03:00">
+            Nov 14, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/artigo/">#artigo</a></span>
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/%C3%A1gua/">#água</a></span>
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/vega-lite/">#vega-lite</a></span>
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/lab-01/">#lab-01</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>Ainda que apresente consequências sociais mais brandas, a crise hídrica que se estende
+sobre o nordeste brasileiro já atingiu proporções que não eram vistas desde a Grande Seca de 1915.
+Desde 2012, 600 municípios da região decretaram situação de emergência e cerca de 23 milhões de nordestinos
+tiveram suas vidas afetadas pela estiagem.</p>
+
+<p>Com toda a sua área inserida no <em>Polígono das Secas</em>, a Paraíba foi um dos estados mais afetados e
+atualmente, 196 municípios do estado encontram-se em situação de emergência, inclusive Campina Grande.</p>
+
+<p>O reservatório que abastece a cidade, Epitácio Pessoa, localizado no município de Boqueirão,
+atingiu o menor nível desde sua em construção, em 1957, mesmo com as estratégias de racionamento adotadas
+pelas autoridades desde o final do ano de 2014.</p>
+
+<p>Essas estratégias de racionamento foram apontadas como tardias por alguns setores da população,
+mas a análise da série histórica mostra que esse pode não ser o caso. Em novembro de 2004, o açude atingiu
+níveis similares àqueles vistos em dezembro de 2014, momento em que o racionamento foi decretado. No primeiro
+caso, talvez devido a análises meteorológicas ou outros fatores, nenhum plano de racionamento foi
+feito público à população.</p>
+
+<div id="vis1" width=450></div>
+
+<p>Apesar da possibilidade de outros fatores influenciarem no nível do reservatório, essa informação pode
+ser utilizada para avaliar a efetividade do racionamento.</p>
+
+<div id="vis2" width=450></div>
+
+<p>Olhando muito atentamente é possível ver uma pequena diminuição no ritmo da
+diminuição do nível do reservatório a partir de Janeiro de 2015, mas conforme
+o nível do repositório caiu, as ações se tornaram menos efetivas.</p>
+
+<p>A partir de abril de 2017, porém, um novo fator passou a atuar sobre o açude.
+Foi nesse mês que as obras do eixo leste da transposição do rio São Francisco foram finalizadas e
+as águas do rio também passaram a abastecer o açude.</p>
+
+<p>Talvez, a abundância de água tenho feito algumas autoridades se afobarem e o racionamento
+foi desfeito apenas 4 meses após o término das obras, o que causou uma pequena diminuição na
+velocidade de enchimento do açude, como pode ser visto abaixo.</p>
+
+<div id="vis3" width=450></div>
+
+<h5 id="referências">Referências</h5>
+
+<ul>
+<li><a href="http://g1.globo.com/profissao-reporter/noticia/2017/05/nordeste-brasileiro-vive-pior-seca-dos-ultimos-cem-anos.html">http://g1.globo.com/profissao-reporter/noticia/2017/05/nordeste-brasileiro-vive-pior-seca-dos-ultimos-cem-anos.html</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Pol%C3%ADgono_das_secas">https://pt.wikipedia.org/wiki/Pol%C3%ADgono_das_secas</a></li>
+<li><a href="http://www.paraibadebate.com.br/crise-hidrica-196-municipios-da-paraiba-estao-em-situacao-de-emergencia-prefeitos-pedem-auxilio-ao-governo-federal/">http://www.paraibadebate.com.br/crise-hidrica-196-municipios-da-paraiba-estao-em-situacao-de-emergencia-prefeitos-pedem-auxilio-ao-governo-federal/</a></li>
+<li><a href="https://g1.globo.com/pb/paraiba/noticia/diario-oficial-publica-decreto-de-situacao-de-emergencia-em-196-cidades-da-paraiba.ghtml">https://g1.globo.com/pb/paraiba/noticia/diario-oficial-publica-decreto-de-situacao-de-emergencia-em-196-cidades-da-paraiba.ghtml</a>
+<a href="http://www.maispb.com.br/220670/acude-de-boqueirao-chega-5-e-sai-do-estado-critico.html">http://www.maispb.com.br/220670/acude-de-boqueirao-chega-5-e-sai-do-estado-critico.html</a></li>
+<li><a href="http://g1.globo.com/pb/paraiba/noticia/2014/12/comeca-racionamento-em-cidades-abastecidas-por-boqueirao-na-paraiba.html">http://g1.globo.com/pb/paraiba/noticia/2014/12/comeca-racionamento-em-cidades-abastecidas-por-boqueirao-na-paraiba.html</a></li>
+<li><a href="http://www.jornaldaparaiba.com.br/vida_urbana/racionamento-campina-grande-fica-sem-agua-do-sabado-a-terca.html">http://www.jornaldaparaiba.com.br/vida_urbana/racionamento-campina-grande-fica-sem-agua-do-sabado-a-terca.html</a></li>
+<li><a href="http://www.jornaldaparaiba.com.br/vida_urbana/racionamento-na-regiao-de-cg-fica-maior-a-partir-deste-sabado.html">http://www.jornaldaparaiba.com.br/vida_urbana/racionamento-na-regiao-de-cg-fica-maior-a-partir-deste-sabado.html</a></li>
+<li><a href="http://www.jornaldaparaiba.com.br/vida_urbana/racionamento-passa-a-ser-de-quase-cinco-dias-em-campina-grande.html">http://www.jornaldaparaiba.com.br/vida_urbana/racionamento-passa-a-ser-de-quase-cinco-dias-em-campina-grande.html</a></li>
+<li><a href="https://g1.globo.com/pb/paraiba/noticia/racionamento-de-agua-em-campina-grande-e-regiao-muda-a-partir-deste-sabado-22.ghtml">https://g1.globo.com/pb/paraiba/noticia/racionamento-de-agua-em-campina-grande-e-regiao-muda-a-partir-deste-sabado-22.ghtml</a></li>
+<li><a href="https://g1.globo.com/pb/paraiba/noticia/fim-do-racionamento-em-boqueirao-e-antecipado-para-sexta-feira-anuncia-ricardo-coutinho.ghtml">https://g1.globo.com/pb/paraiba/noticia/fim-do-racionamento-em-boqueirao-e-antecipado-para-sexta-feira-anuncia-ricardo-coutinho.ghtml</a></li>
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.7/vega.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.1/vega-lite.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-rc7/vega-embed.js"></script>
+
+<script>
+    const spec1 = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+      "height": 380,
+      "width": 600,
+      "title": "Volume mensal do Açude Epitácio Pessoa (%)",
+      "data": {
+        "url": "https://api.insa.gov.br/reservatorios/12172/monitoramento",
+        "format": {
+            "type": "json",
+            "property": "volumes",
+            "parse": {
+                "DataInformacao": "utc:'%d/%m/%Y'"
+            }
+        }
+      },
+
+      "mark": "bar",
+
+      "transform": [{
+          "filter": {
+              "field": "DataInformacao",
+              "timeUnit": "utcyearmonth",
+              "range": [{"year": 1997, "month": "jan"}, {"year": 2017, "month": "nov"}]
+          }
+      }],
+
+      "encoding": {
+          "x": {
+              "field": "DataInformacao",
+              "type": "temporal",
+              "timeUnit": "utcyearmonth",
+              "axis": {
+                  "title": "Data"
+              }
+          },
+          "y": {
+              "field": "VolumePercentual",
+              "aggregate": "mean",
+              "type": "quantitative",
+              "axis": {
+                  "title": "Volume (%)"
+              }
+          }
+       }  
+    };
+
+    vegaEmbed('#vis1', spec1).catch(console.warn);
+
+</script>
+
+<script>
+    const spec2 = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+      "height": 380,
+      "width": 600,
+      "title": "Volume mensal do Açude Epitácio Pessoa (%)",
+      "data": {
+        "url": "https://api.insa.gov.br/reservatorios/12172/monitoramento",
+        "format": {
+            "type": "json",
+            "property": "volumes",
+            "parse": {
+                "DataInformacao": "utc:'%d/%m/%Y'"
+            }
+        }
+      },
+
+      "mark": "line",
+
+      "transform": [{
+          "filter": {
+              "field": "DataInformacao",
+              "timeUnit": "utcyearmonth",
+              "range": [{"year": 2014, "month": "jan"}, {"year": 2017, "month": "nov"}]
+          }
+      }],
+
+      "encoding": {
+          "x": {
+              "field": "DataInformacao",
+              "type": "temporal",
+              "timeUnit": "utcyearmonth",
+              "axis": {
+                  "title": "Data"
+              }
+          },
+          "y": {
+              "field": "VolumePercentual",
+              "aggregate": "mean",
+              "type": "quantitative",
+              "axis": {
+                  "title": "Volume (%)"
+              }
+          }
+       }  
+    };
+
+    vegaEmbed('#vis2', spec2).catch(console.warn);
+
+</script>
+
+<script>
+    const spec3 = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+      "height": 380,
+      "width": 600,
+      "title": "Volume mensal do Açude Epitácio Pessoa (%)",
+      "data": {
+        "url": "https://api.insa.gov.br/reservatorios/12172/monitoramento",
+        "format": {
+            "type": "json",
+            "property": "volumes",
+            "parse": {
+                "DataInformacao": "utc:'%d/%m/%Y'"
+            }
+        }
+      },
+
+      "mark": "area",
+
+      "transform": [{
+          "filter": {
+              "field": "DataInformacao",
+              "timeUnit": "utcyearmonth",
+              "range": [{"year": 2017, "month": "apr"}, {"year": 2017, "month": "nov"}]
+          }
+      }],
+
+      "encoding": {
+          "x": {
+              "field": "DataInformacao",
+              "type": "temporal",
+              "timeUnit": "utcyearmonth",
+              "axis": {
+                  "title": "Data"
+              }
+          },
+          "y": {
+              "field": "VolumePercentual",
+              "aggregate": "mean",
+              "type": "quantitative",
+              "axis": {
+                  "title": "Volume (%)"
+              }
+          }
+       }  
+    };
+
+    vegaEmbed('#vis3', spec3).catch(console.warn);
+
+</script>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://jcnsilva.github.io/datavis/" style="background-image: url(/datavis/images/logo.png)"><span class="hidden">Júlio César Neves's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="http://jcnsilva.github.io/datavis/">Júlio César Neves</a></h4>
+  
+  <p>Estudante de Ciência da Computação</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Campina Grande, Brasil</span>
+    <span class="author-link icon-link"><a href="http://jcnsilva.github.io">http://jcnsilva.github.io</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=A%20Crise%20H%c3%addrica%20e%20o%20A%c3%a7ude%20Epit%c3%a1cio%20Pessoa&nbsp;-&nbsp;Visualiza%c3%a7%c3%a3o%20de%20Dados&amp;url=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fcrise-hidrica-epitacio-pessoa%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fcrise-hidrica-epitacio-pessoa%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fcrise-hidrica-epitacio-pessoa%2f&amp;description=A%20Crise%20H%c3%addrica%20e%20o%20A%c3%a7ude%20Epit%c3%a1cio%20Pessoa"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fcrise-hidrica-epitacio-pessoa%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Visualização de Dados</a> Proibida reprodução total ou parcial sem autorização</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/datavis/js/jquery.js"></script>
+    <script type="text/javascript" src="/datavis/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/datavis/js/index.js"></script>
+    
+</body>
+</html>
+

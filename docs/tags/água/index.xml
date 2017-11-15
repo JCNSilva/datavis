@@ -13,12 +13,13 @@
     
     
     <item>
-      <title>O açude Epitácio Pessoa e a transposição</title>
-      <link>http://jcnsilva.github.io/datavis/epitacio-pessoa-transposicao/</link>
+      <title>A Crise Hídrica e o Açude Epitácio Pessoa</title>
+      <link>http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/</link>
       <pubDate>Tue, 14 Nov 2017 23:09:08 -0300</pubDate>
       
-      <guid>http://jcnsilva.github.io/datavis/epitacio-pessoa-transposicao/</guid>
-      <description>O açude Epitácio Pessoa e a transposição        const spec1 = { &#34;$schema&#34;: &#34;https://vega.github.io/schema/vega-lite/v2.json&#34;, &#34;width&#34;: 800, &#34;height&#34;: 450, &#34;title&#34;: &#34;Volume mensal do Açude Epitácio Pessoa (milhões de m³)&#34;, &#34;data&#34;: { &#34;url&#34;: &#34;https://api.insa.gov.br/reservatorios/12172/monitoramento&#34;, &#34;format&#34;: { &#34;type&#34;: &#34;json&#34;, &#34;property&#34;: &#34;volumes&#34;, &#34;parse&#34;: { &#34;DataInformacao&#34;: &#34;utc:&#39;%d/%m/%Y&#39;&#34; } } }, &#34;layer&#34;: [ { &#34;mark&#34;: &#34;area&#34;, &#34;encoding&#34;: { &#34;x&#34;: { &#34;field&#34;: &#34;DataInformacao&#34;, &#34;type&#34;: &#34;temporal&#34;, &#34;timeUnit&#34;: &#34;utcyearmonth&#34;, &#34;axis&#34;: { &#34;title&#34;: &#34;</description>
+      <guid>http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/</guid>
+      <description>Ainda que apresente consequências sociais mais brandas, a crise hídrica que se estende sobre o nordeste brasileiro já atingiu proporções que não eram vistas desde a Grande Seca de 1915. Desde 2012, 600 municípios da região decretaram situação de emergência e cerca de 23 milhões de nordestinos tiveram suas vidas afetadas pela estiagem.
+Com toda a sua área inserida no Polígono das Secas, a Paraíba foi um dos estados mais afetados e atualmente, 196 municípios do estado encontram-se em situação de emergência, inclusive Campina Grande.</description>
     </item>
     
   </channel>
