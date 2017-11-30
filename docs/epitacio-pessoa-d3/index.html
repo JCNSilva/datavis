@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Analisando o Volume Percentual de Boqueirão"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="Analisando o Volume Percentual de Boqueirão &middot; Visualização de Dados" />
+  	<meta property="og:site_name" content="Visualização de Dados" />
+  	<meta property="og:url" content="http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/" />
+
+    
+        
+            <meta property="og:image" content="/datavis/images/cover.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-11-29T20:43:08-03:00" />
+
+    
+    <meta property="article:tag" content="visualizacao" />
+    
+    <meta property="article:tag" content="água" />
+    
+    <meta property="article:tag" content="d3" />
+    
+    <meta property="article:tag" content="lab-02" />
+    
+    
+
+    <title>Analisando o Volume Percentual de Boqueirão &middot; Visualização de Dados</title>
+
+    
+    <meta name="description" content=".mychart rect { fill: steelblue; } .mychart rect:hover { fill: goldenrod; } .mychart text { font: 12px sans-serif; text-anchor: left; } .mychart circle:hover { " />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/datavis/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="/datavis/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="/datavis/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/datavis/css/nav.css" />
+
+    
+
+    
+
+    
+      
+          <link href="/datavis/index.xml" rel="alternate" type="application/rss+xml" title="Visualização de Dados" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    <link rel="canonical" href="http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": ,
+        "logo": http://jcnsilva.github.io/datavis/images/logo.png
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": http://jcnsilva.github.io/datavis/images/logo.png,
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": http://jcnsilva.github.io,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": Estudante de Ciência da Computação
+        
+    },
+    "headline": Analisando o Volume Percentual de Boqueirão,
+    "name": Analisando o Volume Percentual de Boqueirão,
+    "wordCount": 248,
+    "timeRequired": "PT2M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/,
+    "datePublished": 2017-11-29T20:43Z,
+    "dateModified": 2017-11-29T20:43Z,
+    
+    "keywords": visualizacao, água, d3, lab-02,
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            <h3>Siga-me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/JCNSilva/">Github</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/datavis/">Blog</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="/datavis/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="http://jcnsilva.github.io/datavis/"><img src="/datavis/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Analisando o Volume Percentual de Boqueirão</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-11-29T20:43:08-03:00">
+            Nov 29, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/visualizacao/">#visualizacao</a></span>
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/%C3%A1gua/">#água</a></span>
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/d3/">#d3</a></span>
+         
+          <span class="post-tag small"><a href="http://jcnsilva.github.io/datavis//tags/lab-02/">#lab-02</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+
+<style>
+    .mychart rect {
+      fill: steelblue;
+    }
+
+    .mychart rect:hover {
+      fill: goldenrod;
+    }
+
+    .mychart text {
+      font: 12px sans-serif;
+      text-anchor: left;
+    }
+
+    .mychart circle:hover  {
+         fill-opacity: 1;
+    }
+</style>
+
+<p>Como parte dos trabalhos do laboratório 2, foi elaborada a seguinte visualização
+utilizando d3.js.</p>
+
+<div class="row mychart" id="chart"></div>
+
+<p>A visualização mostra o 10-percentil e o 90-percentil do volume percentual
+do açude Epitácio Pessoa a cada mês do ano. A cor azul indica que o mês
+está dentro da estação chuvosa do semiárido, enquanto que a cor marrom
+indica que o mês está na estação de estiagem.</p>
+
+<script type="text/javascript">
+"use strict"
+
+function draw(dados) {
+
+    dados.map((d, i) => d.tipo_mes = (d.mes >= 1 && d.mes <= 6 ? "chuvoso" : "seco"));
+
+  // definicoes de altura e largura do svg e da vis dentro
+  var alturaSVG = 400, larguraSVG = 900;
+  var   margin = {top: 10, right: 20, bottom:45, left: 45}, // para descolar a vis das bordas do grafico
+      larguraVis = larguraSVG - margin.left - margin.right,
+      alturaVis = alturaSVG - margin.top - margin.bottom;
+
+//Prepara onde adicionaremos a visualizacao
+    var grafico = d3.select('#chart') // cria elemento <svg> com um <g> dentro
+      .append('svg')
+        .attr('width', larguraVis + margin.left + margin.right)
+        .attr('height', alturaVis + margin.top + margin.bottom)
+      .append('g') // para entender o <g> vá em x03-detalhes-svg.html
+        .attr('transform', 'translate(' +  margin.left + ',' + margin.top + ')');
+
+//As escalas
+
+     var xScale = d3.scaleLinear()
+        .domain([80, 110])
+        .range([0, larguraVis - 250])
+        .clamp(true);
+
+    var yScale = d3.scaleLinear()
+        .domain([10, 40])
+        .range([alturaVis, 25])
+        .clamp(true);
+
+    var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+
+//As marcas
+
+    grafico.selectAll('g')
+            .data(dados)
+            .enter()
+              .append('circle')
+                .attr('cx', d => xScale(d.noventa_percentil))
+                .attr('cy', d => yScale(d.dez_percentil))
+                .attr('r', '5')
+                .attr('fill', d => colorScale(d.tipo_mes))
+                .attr('fill-opacity', '0.3');
+
+//Os eixos
+    grafico.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + alturaVis + ")")
+            .call(d3.axisBottom(xScale)); // magica do d3: gera eixo a partir da escala
+
+    grafico.append('g')
+            .attr('transform', 'translate(0,0)')
+            .call(d3.axisLeft(yScale))  // gera eixo a partir da escala
+
+    grafico.append("text")
+      .attr("transform", "translate(-30," + (alturaVis + margin.top)/2 + ") rotate(-90)")
+      .text("10-percentil");
+
+      grafico.append("text")
+      .attr("transform", "translate(250, " + (alturaVis + 30) + ")")
+      .text("90-percentil");
+};
+
+d3.csv('/dados/boqueirao-por-mes.csv', function(dados) {
+  draw(dados);
+});
+
+</script>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="http://jcnsilva.github.io/datavis/" style="background-image: url(/datavis/images/logo.png)"><span class="hidden">Júlio César Neves's Picture</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="http://jcnsilva.github.io/datavis/">Júlio César Neves</a></h4>
+  
+  <p>Estudante de Ciência da Computação</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Campina Grande, Brasil</span>
+    <span class="author-link icon-link"><a href="http://jcnsilva.github.io">http://jcnsilva.github.io</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Analisando%20o%20Volume%20Percentual%20de%20Boqueir%c3%a3o&nbsp;-&nbsp;Visualiza%c3%a7%c3%a3o%20de%20Dados&amp;url=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fepitacio-pessoa-d3%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fepitacio-pessoa-d3%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fepitacio-pessoa-d3%2f&amp;description=Analisando%20o%20Volume%20Percentual%20de%20Boqueir%c3%a3o"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fjcnsilva.github.io%2fdatavis%2fepitacio-pessoa-d3%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="/datavis/crise-hidrica-epitacio-pessoa/">
+          <section class="post">
+              <h2>A Crise Hídrica e o Açude Epitácio Pessoa</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Visualização de Dados</a> Proibida reprodução total ou parcial sem autorização</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="/datavis/js/jquery.js"></script>
+    <script type="text/javascript" src="/datavis/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/datavis/js/index.js"></script>
+    
+</body>
+</html>
+

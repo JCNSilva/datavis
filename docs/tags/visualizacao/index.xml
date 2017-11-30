@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visualização de Dados</title>
-    <link>http://jcnsilva.github.io/datavis/</link>
-    <description>Recent content on Visualização de Dados</description>
+    <title>Visualizacao on Visualização de Dados</title>
+    <link>http://jcnsilva.github.io/datavis/tags/visualizacao/</link>
+    <description>Recent content in Visualizacao on Visualização de Dados</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
     <copyright>Proibida reprodução total ou parcial sem autorização</copyright>
     <lastBuildDate>Wed, 29 Nov 2017 20:43:08 -0300</lastBuildDate>
     
-	<atom:link href="http://jcnsilva.github.io/datavis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://jcnsilva.github.io/datavis/tags/visualizacao/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <guid>http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/</guid>
       <description>.mychart rect { fill: steelblue; } .mychart rect:hover { fill: goldenrod; } .mychart text { font: 12px sans-serif; text-anchor: left; } .mychart circle:hover { fill-opacity: 1; }  Como parte dos trabalhos do laboratório 2, foi elaborada a seguinte visualização utilizando d3.js.
  A visualização mostra o 10-percentil e o 90-percentil do volume percentual do açude Epitácio Pessoa a cada mês do ano. A cor azul indica que o mês está dentro da estação chuvosa do semiárido, enquanto que a cor marrom indica que o mês está na estação de estiagem.</description>
-    </item>
-    
-    <item>
-      <title>A Crise Hídrica e o Açude Epitácio Pessoa</title>
-      <link>http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/</link>
-      <pubDate>Tue, 14 Nov 2017 23:09:08 -0300</pubDate>
-      
-      <guid>http://jcnsilva.github.io/datavis/crise-hidrica-epitacio-pessoa/</guid>
-      <description>Ainda que apresente consequências sociais mais brandas, a crise hídrica que se estende sobre o nordeste brasileiro já atingiu proporções que não eram vistas desde a Grande Seca de 1915. Desde 2012, 600 municípios da região decretaram situação de emergência e cerca de 23 milhões de nordestinos tiveram suas vidas afetadas pela estiagem.
-Com toda a sua área inserida no Polígono das Secas, a Paraíba foi um dos estados mais afetados e atualmente, 196 municípios do estado encontram-se em situação de emergência, inclusive Campina Grande.</description>
     </item>
     
   </channel>
