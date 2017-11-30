@@ -6,6 +6,8 @@ slug: "epitacio-pessoa-d3"
 tags: ["visualizacao", "água", "d3", "lab-02"]
 ---
 
+<!--more-->
+
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 <style>
@@ -104,7 +106,7 @@ function draw(dados) {
       .text("90-percentil");
 };
 
-d3.csv('/dados/boqueirao-por-mes.csv', function(dados) {
+d3.csv('datavis/dados/boqueirao-por-mes.csv', function(dados) {
   draw(dados);
 });
 

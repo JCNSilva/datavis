@@ -47,7 +47,7 @@
     <title>Analisando o Volume Percentual de Boqueirão &middot; Visualização de Dados</title>
 
     
-    <meta name="description" content=".mychart rect { fill: steelblue; } .mychart rect:hover { fill: goldenrod; } .mychart text { font: 12px sans-serif; text-anchor: left; } .mychart circle:hover { " />
+    <meta name="description" content="&lt;p&gt;&lt;/p&gt;" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -219,7 +219,9 @@
     </header>
 
     <section class="post-content">
-      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <p></p>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
 
 <style>
     .mychart rect {
@@ -317,12 +319,11 @@ function draw(dados) {
       .text("90-percentil");
 };
 
-d3.csv('/dados/boqueirao-por-mes.csv', function(dados) {
+d3.csv('datavis/dados/boqueirao-por-mes.csv', function(dados) {
   draw(dados);
 });
 
 </script>
-
     </section>
 
 

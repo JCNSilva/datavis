@@ -18,8 +18,7 @@
       <pubDate>Wed, 29 Nov 2017 20:43:08 -0300</pubDate>
       
       <guid>http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/</guid>
-      <description>.mychart rect { fill: steelblue; } .mychart rect:hover { fill: goldenrod; } .mychart text { font: 12px sans-serif; text-anchor: left; } .mychart circle:hover { fill-opacity: 1; }  Como parte dos trabalhos do laboratório 2, foi elaborada a seguinte visualização utilizando d3.js.
- A visualização mostra o 10-percentil e o 90-percentil do volume percentual do açude Epitácio Pessoa a cada mês do ano. A cor azul indica que o mês está dentro da estação chuvosa do semiárido, enquanto que a cor marrom indica que o mês está na estação de estiagem.</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
