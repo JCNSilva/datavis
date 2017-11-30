@@ -106,7 +106,7 @@ function draw(dados) {
       .text("90-percentil");
 };
 
-d3.csv('datavis/dados/boqueirao-por-mes.csv', function(dados) {
+d3.csv('/datavis/dados/boqueirao-por-mes.csv', function(dados) {
   draw(dados);
 });
 
