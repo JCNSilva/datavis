@@ -1,0 +1,37 @@
+.line {
+    fill: none;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 1.5;
+}
+
+.line:hover {
+    stroke-width: 2.5;
+}
+
+.point {
+    r: 3.5;
+    stroke-width: 0;
+}
+
+.bar {
+    opacity: 0.9;
+}
+
+.bar:hover {
+    opacity: 1;
+}
+
+div.tooltip {
+    position: absolute;
+    z-index: 10000;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 6px;
+    font: 12px sans-serif;
+    background: lightgrey;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
