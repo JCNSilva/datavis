@@ -1,6 +1,6 @@
 baseurl = "http://jcnsilva.github.io/datavis/"
 copyright = "Proibida reprodução total ou parcial sem autorização"
-#disqusshortname = "vjeantet"
+disqusshortname = "jdatavis"
 languagecode = "pt-BR"
 paginate = 5
 pluralizelisttitles = false
@@ -19,6 +19,7 @@ githubName = "JCNSilva/datavis"
 #googleAnalyticsUserID = "UA-79101-12"
 hideHUGOSupport = false
 logo = "images/logo.png"
+customCSS = ["css/custom.css"]
 #twitterName = "vjeantet"
 
 [permalinks]

@@ -13,21 +13,18 @@
     
     
     <item>
-      <title>Hábitos de Transporte no Entorno do Açude Velho</title>
-      <link>http://jcnsilva.github.io/datavis/transportes-acude-velho/</link>
+      <title>Uso de Bicicletas no Entorno do Açude Velho</title>
+      <link>http://jcnsilva.github.io/datavis/bicicletas-acude-velho/</link>
       <pubDate>Sat, 09 Dec 2017 20:43:08 -0300</pubDate>
       
-      <guid>http://jcnsilva.github.io/datavis/transportes-acude-velho/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Analisando o Volume Percentual de Boqueirão</title>
-      <link>http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/</link>
-      <pubDate>Wed, 29 Nov 2017 20:43:08 -0300</pubDate>
-      
-      <guid>http://jcnsilva.github.io/datavis/epitacio-pessoa-d3/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
+      <guid>http://jcnsilva.github.io/datavis/bicicletas-acude-velho/</guid>
+      <description>&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://jcnsilva.github.io/datavis/datavis/css/l2-custom.css&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;A mobilidade é um tema cada vez mais presente nas discussões sobre desenvolvimento
+sustentável e qualidade de vida nos centros urbanos. Dentre as discussões envolvendo
+o tema, as bicicletas são constantemente citadas como instrumentos de mobilidade efetivos.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

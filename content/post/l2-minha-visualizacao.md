@@ -1,7 +1,7 @@
 ---
 title: "Analisando o Volume Percentual de Boqueirão"
 date: 2017-11-29T20:43:08-03:00
-draft: false
+draft: true
 slug: "epitacio-pessoa-d3"
 tags: ["visualizacao", "água", "d3", "lab-02"]
 ---
