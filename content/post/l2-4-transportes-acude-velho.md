@@ -4,6 +4,7 @@ date: 2017-12-09T20:43:08-03:00
 draft: false
 comments: true
 slug: "bicicleta-acude-velho"
+image: "images/AcudeVelho.jpg"
 tags: ["visualizacao", "mobilidade", "igualdade", "d3", "lab-02"]
 ---
 
