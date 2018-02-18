@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
     <copyright>Proibida reprodução total ou parcial sem autorização</copyright>
-    <lastBuildDate>Sat, 09 Dec 2017 20:43:08 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 18 Feb 2018 08:43:08 -0300</lastBuildDate>
     
 	<atom:link href="http://jcnsilva.github.io/datavis/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Relações Entre Renda Média e o Nível de Urbanização de Setores da Paraíba</title>
+      <link>http://jcnsilva.github.io/datavis/paraiba-renda-urbanizacao/</link>
+      <pubDate>Sun, 18 Feb 2018 08:43:08 -0300</pubDate>
+      
+      <guid>http://jcnsilva.github.io/datavis/paraiba-renda-urbanizacao/</guid>
+      <description>&lt;p&gt;Para essa análise, foram utilizados dados do IBGE sobre a distribuição de renda
+e o grau de urbanização dos setores censitários do estado da Paraíba. Aqui, buscou-se
+comparar a renda média mensal dos domicílios de um setor urbano com a renda média dos
+domicílios rurais a fim de descobrir padrões.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Uso de Bicicletas no Entorno do Açude Velho</title>

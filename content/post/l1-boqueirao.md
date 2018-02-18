@@ -4,6 +4,7 @@ date: 2017-11-14T23:09:08-03:00
 draft: false
 comments: true
 slug: "crise-hidrica-epitacio-pessoa"
+image: "images/boqueirao.jpg"
 tags: ["artigo", "água", "vega-lite", "lab-01"]
 ---
 

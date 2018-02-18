@@ -1,3 +1,7 @@
 section.post-content {
-    align: justify;
+    text-align: justify;
+}
+
+.post-excerpt p {
+    text-align: justify;
 }

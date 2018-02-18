@@ -3,7 +3,8 @@
 var SVGHeight = 400, SVGWidth = 650;
 var	margin = {top: 10, right: 10, bottom:30, left: 30},
     VisWidth = SVGWidth - margin.left - margin.right,
-    VisHeight = SVGHeight - margin.top - margin.bottom;
+    VisHeight = SVGHeight - margin.top - margin.bottom,
+    LegHeight = VisHeight * 0.25;
 
 var tooltip = d3.select("body")
             .append("div")
@@ -20,9 +21,19 @@ function createPanels() {
             .attr("transform", "translate (" + margin.left + "," + margin.top + ")");
 }
 
+function createLegends(){
+    d3.select("#chart_1")
+        .append("svg")
+            .attr("height", LegHeight)
+            .attr("width", SVGWidth)
+            .attr("id", "leg_1")
+        /*.append("g")
+            .attr("transform", "translate (" + margin.left + ", " + (margin.top + VisHeight) + ")");*/
+}
+
 function plot1(data) {
 
-    var plot = d3.select("#chart_1 > svg > g");
+    var meios_locomocao = ["carro", "moto", "ônibus", "caminhão", "ciclistas", "pedestres"];
 
     var xScale = d3.scaleTime()
                     .domain(d3.extent(data, (d) => d.horario_inicial))
@@ -35,8 +46,10 @@ function plot1(data) {
                     .nice();
 
     var colorScale = d3.scaleOrdinal()
-                    .domain(["carro", "moto", "ônibus", "caminhão", "ciclistas", "pedestres"])
+                    .domain(meios_locomocao)
                     .range(d3.schemeCategory10);
+
+    var plot = d3.select("#plot_1");
 
     var carLine = d3.line()
                     .x((d) => xScale(d.horario_inicial))
@@ -185,6 +198,30 @@ function plot1(data) {
             .attr("class", "yaxis")
             .attr("transform", "translate(" + margin.left + ",0)")
             .call(d3.axisLeft(yScale));
+
+
+    /* Legend */
+    var legend = d3.select("#leg_1")
+                    .selectAll("g");
+
+    var squareSize = 15;
+
+    legend.data(meios_locomocao)
+        .enter()
+        .append("g")
+            .attr("id", (d, i) => ("leg1_el" + (i + 1)))
+        .append("rect")
+            .attr("x", (d, i) => Math.floor(i % 3) * squareSize * 12)
+            .attr("y", (d, i) => Math.floor(i / 3) * squareSize * 2)
+            .attr("width", squareSize)
+            .attr("height", squareSize)
+            .attr("fill", d => colorScale(d));
+
+    legend.data()
+            .append("text")
+                .attr("html", (d, i) => d);
+
+
 }
 
 function plot2(data) {
@@ -308,6 +345,7 @@ function plot3(data) {
 
 /* RUN */
 createPanels();
+createLegends();
 
 d3.csv("/datavis/data/dados_l2v1.csv",
         (data) => {
