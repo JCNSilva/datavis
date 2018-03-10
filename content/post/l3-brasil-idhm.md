@@ -8,17 +8,6 @@ image: "images/sao-caetano.jpg"
 tags: ["visualizacao", "brasil", "d3", "lab-03", "idhm", "mapa"]
 ---
 
-O IDHM, ou Índice de Desenvolvimento Humano Municipal, é uma medida do
-desenvolvimento econômico e social de um município. Assim como o IDH - Índice de
-Desenvolvimento Humano - o IDHM analisa a expectativa de vida, o nível de educação
-e a renda média dos cidadãos de um município, mas adequa os índices à realidade
-brasileira.
-
-O índice apresenta valores a partir de 0, sendo 1 seu valor máximo. Nos mapas
-abaixo é possível observar a evolução do índice no país entre os anos 2000 e 2010.
-
-<!--more-->
-
 <style>
     .cidades {
       fill: none;
@@ -37,12 +26,24 @@ abaixo é possível observar a evolução do índice no país entre os anos 2000
       font-family:"avenir next", Arial, sans-serif;
       padding: 4px 8px;
       display: none;
+      z-index: 10;
     }
 
     #vis1, #vis2 {
         background-color: #f3f3f3;
     }
 </style>
+
+O IDHM, ou Índice de Desenvolvimento Humano Municipal, é uma medida do
+desenvolvimento econômico e social de um município. Assim como o IDH - Índice de
+Desenvolvimento Humano - o IDHM analisa a expectativa de vida, o nível de educação
+e a renda média dos cidadãos de um município, mas adequa os índices à realidade
+brasileira.
+
+<!--more-->
+
+O índice apresenta valores a partir de 0, sendo 1 seu valor máximo. Nos mapas
+abaixo é possível observar a evolução do índice no país entre os anos 2000 e 2010.
 
 <svg id="vis1" width="100%" height="620px"></svg>
 <svg id="vis2" width="100%" height="620px"></svg>

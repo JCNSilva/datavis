@@ -18,14 +18,37 @@
       <pubDate>Sat, 10 Mar 2018 14:47:42 -0300</pubDate>
       
       <guid>http://jcnsilva.github.io/datavis/brasil-evolucao-idhm/</guid>
-      <description>&lt;p&gt;O IDHM, ou Índice de Desenvolvimento Humano Municipal, é uma medida do
+      <description>&lt;style&gt;
+    .cidades {
+      fill: none;
+      stroke-linejoin: round;
+    }
+
+    path:hover, path.highlighted {
+      fill: tomato;
+    }
+
+    div.tooltip {
+      position: absolute;
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+      font-family:&#34;avenir next&#34;, Arial, sans-serif;
+      padding: 4px 8px;
+      display: none;
+      z-index: 10;
+    }
+
+    #vis1, #vis2 {
+        background-color: #f3f3f3;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;O IDHM, ou Índice de Desenvolvimento Humano Municipal, é uma medida do
 desenvolvimento econômico e social de um município. Assim como o IDH - Índice de
 Desenvolvimento Humano - o IDHM analisa a expectativa de vida, o nível de educação
 e a renda média dos cidadãos de um município, mas adequa os índices à realidade
 brasileira.&lt;/p&gt;
-
-&lt;p&gt;O índice apresenta valores a partir de 0, sendo 1 seu valor máximo. Nos mapas
-abaixo é possível observar a evolução do índice no país entre os anos 2000 e 2010.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
