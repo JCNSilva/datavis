@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lab 04 on Visualização de Dados</title>
+    <link>http://jcnsilva.github.io/datavis/tags/lab-04/</link>
+    <description>Recent content in Lab 04 on Visualização de Dados</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <copyright>Proibida reprodução total ou parcial sem autorização</copyright>
+    <lastBuildDate>Sat, 10 Mar 2018 20:31:32 -0300</lastBuildDate>
+    
+	<atom:link href="http://jcnsilva.github.io/datavis/tags/lab-04/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Artistas Similares a The Killers Segundo o Spotify</title>
+      <link>http://jcnsilva.github.io/datavis/similaridade-the-killers/</link>
+      <pubDate>Sat, 10 Mar 2018 20:31:32 -0300</pubDate>
+      
+      <guid>http://jcnsilva.github.io/datavis/similaridade-the-killers/</guid>
+      <description>&lt;p&gt;Usando dados sobre a similaridade entre artistas disponibilizados pela API
+do Spotify e pré-processados pelo sistema &lt;a href=&#34;http://labs.polsys.net/playground/spotify/&#34;&gt;Spotify Artist Network&lt;/a&gt;,
+é possível observar uma rede que conecta artistas semelhantes aos seus artistas favoritos.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
