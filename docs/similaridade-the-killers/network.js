@@ -18,7 +18,7 @@ var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
     .force("charge", d3.forceManyBody().distanceMax(700))
     .force("center", d3.forceCenter(width / 2, height / 2))
-    .force("collide", d3.forceCollide().radius(7));
+    .force("collide", d3.forceCollide().radius(15));
 
 d3.json("artistas-semelhantes.json", function(error, graph) {
   if (error) throw error;
