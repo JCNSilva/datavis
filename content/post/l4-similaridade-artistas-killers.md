@@ -15,7 +15,7 @@ do Spotify e pré-processados pelo sistema [Spotify Artist Network](http://labs.
 <!--more-->
 
 Abaixo, é possível observar a rede de artistas similares à banda americana *The Killers*,
-popular nos anos 2000.
+popular nos anos 2000. O tamanho dos nós representa a popularidade de um artista.
 
 <div id="chart"></div>
 
