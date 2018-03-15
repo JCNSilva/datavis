@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Evolução do IDH no Brasil</title>
+        <style>
+            .cidades {
+              fill: none;
+              stroke-linejoin: round;
+            }
+
+            path:hover, path.highlighted {
+              fill: tomato;
+            }
+
+            div.tooltip {
+              position: absolute;
+              background-color: white;
+              border: 1px solid black;
+              color: black;
+              font-family:"avenir next", Arial, sans-serif;
+              padding: 4px 8px;
+              display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <svg id="vis1" width="900px" height="700px"></svg>
+        <svg id="vis2" width="900px" height="700px"></svg>
+
+        <div>
+            <p>
+                A partir da análise dos mapas acima é possível acompanhar a evolução
+                do Índice de Desenvolvimento Humano dos Municípios - IDHM no Brasil
+                entre os anos 2000 e 2010. O grande destaque se dá ao fato de quase
+                não exisitirem mais municípios com IDHM menor que 0.5 atualmente,
+                feito que era relativamente comum em 2010.
+            </p>
+            <p>
+                Ao observar as visualizações, também é possível perceber a concentração
+                de municípios com os maiores IDMH nas regiões Sul e Sudeste do país.
+                De acordo com os dados de 2010, nenhum dos municípios dessas duas
+                regiões possui IDHM menor que 0.5.
+            </p>
+        </div>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
+        <script src="interatividade.js"></script>
+    </body>
+</html>

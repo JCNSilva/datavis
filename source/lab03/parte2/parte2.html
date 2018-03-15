@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 3  - Parte 2</title>
+    </head>
+    <body>
+        <img src="pb-tracts-renda-threshold-light.svg"
+                alt="Renda média por setor"
+                max-width = "100%">
+
+        <svg id="cap1"></svg>
+
+        <img src="pb-tracts-situacao-threshold-light.svg"
+                alt="Situação do Setor"
+                max-width = "100%">
+
+        <svg id="cap2"></svg>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.min.js"></script>
+
+        <script>
+            // Legenda 1
+            const x1 = d3.scaleLinear() // para a posição vertical dos tics na legenda
+                  .domain([0, 1.5e4])       // domínio dos tics
+                  .rangeRound([620, 950]); // em pixels
+
+            const color1 = d3.scaleThreshold()
+                  .domain([0, 0.375e4, 0.75e4, 1.125e4, 1.5e4])
+                  .range(d3.schemeOrRd[5]);
+
+            const svg1 = d3.select("#cap1")
+                  .style("width", "100%")
+                  .style("height", "auto");
+
+            const g1 = svg1.append("g")
+                  .attr("transform", "translate(10,40)");
+
+            g1.selectAll("rect")
+                .data(color1.range().map(d => {
+                    d = color1.invertExtent(d);
+                    if (d[0] == null) d[0] = x1.domain()[0];
+                    if (d[1] == null) d[1] = x1.domain()[1];
+                    return d;
+                  }))
+                .enter().append("rect")
+                  .attr("height", 8)
+                  .attr("x", d => x1(d[0]))
+                  .attr("width", d => x1(d[1]) - x1(d[0]))
+                  .attr("fill", d => color1(d[0]));
+
+            g1.append("text")
+                  .attr("class", "caption")
+                  .attr("x", x1.range()[0])
+                  .attr("y", -6)
+                  .attr("fill", "#000")
+                  .attr("text-anchor", "start")
+                  .attr("font-weight", "bold")
+                  .text("Renda Média");
+
+            g1.call(d3.axisBottom(x1)
+                  .tickSize(13)
+                  .tickValues([0].concat(color1.domain()))) // Adiciona o zero para o eixo da legenda
+                .select(".domain")
+                  .remove();
+
+            // legenda 2
+            const color2 = d3.scaleOrdinal()
+                .domain(["Rural", "Urbana"])
+                .range(["#fef0d9", "#b30000"]);
+
+            const svg2 = d3.select("#cap2")
+                .style("width", "100%")
+                .style("height", "auto")
+                .style("font-size", "12px")
+                .style("font-weight", "bold")
+                .style("font-family", "Arial, sans-serif");
+
+            const g2 = svg2.append("g")
+                .attr("id", "cap2-body")
+                .attr("transform", "translate(750,40)");
+
+            const legend2 = d3.legendColor()
+                .scale(color2)
+                .title("Situação do Setor")
+                .orient("vertical");
+
+            svg2.select("#cap2-body")
+                .call(legend2);
+        </script>
+    </body>
+</html>
