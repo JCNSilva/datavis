@@ -1,5 +1,4 @@
 # datavis
-Códigos da disciplina Visualização de Dados 2017.2
+Data Visualization Portfolio - 2017.2
 
-Site disponível em:
-https://jcnsilva.github.io/datavis/
+The portfolio is available online at [Datavis](https://jcnsilva.github.io/datavis/) (pt-BR)
